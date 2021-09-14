@@ -184,4 +184,89 @@ h2 {
 .title h2 {
   margin: 40px 0 20px 0;
 }
+
+.container2 .container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.select {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 24px;
+  font-weight: 500;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 336px;
+  height: 74px;
+  border-radius: 20px;
+  background: #F6F6F6;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.select .icon {
+  left: -14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  font-weight: 500;
+}
+
+.container2 .select .icon .circle {
+  position: absolute;
+  z-index: 4;
+  width: 28.8px;
+  height: 28.8px;
+  border-radius: 50%;
+  background-color: #9356DC;
+}
+
+.container2 .select .icon .number {
+  font-size: 0.85rem;
+  font-weight: 400;
+  position: absolute;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 28.8px;
+  height: 28.8px;
+  color: #FFFFFF;
+}
+
+.container2 .select:nth-child(1) i {
+  font-size: 1.2rem;
+}
+
+.container2 .select i {
+  padding: 0 18px 0 30px;
+}
 /*# sourceMappingURL=style.css.map */
