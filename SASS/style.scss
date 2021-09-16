@@ -11,7 +11,6 @@ body {
 }
 
 header {
-
     position: relative;
     display: flex;
     justify-content: center;
@@ -23,7 +22,6 @@ main {
     padding: 8px;
     margin: 0;
 }
-
 /******************* LOADER ************************/
 /***************************************************/
 
@@ -39,13 +37,11 @@ main {
     animation-duration: 3s;
     animation-iteration-count:auto;
     animation-timing-function: linear; 
-
 /******************* POSITION LOADER ****************/
 
     margin: auto;
     position: absolute;
     top: 0;left: 0;right: 0;bottom: 0;
-
 /********************** ANIMATION *******************/
     
     @keyframes spin {
@@ -57,10 +53,8 @@ main {
         }
         
     }
-}
-
-/***************************************************/
-/***************************************************/
+/*****************************************************/
+/*****************************************************/
 
 .container-header {
     max-width: 800px;
@@ -108,29 +102,12 @@ h1 {
     text-align: center;
 }
 
-
 button {
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-weight: 400;
     border: none;
 }
-
-.btn1 {
-    display: flex;
-    align-items: center;
-    width: 220px;
-    height: 50px;
-    color: #000000;
-    font-weight: 500;
-    font-size: 1.1rem;
-    border-radius: 100px;
-    color: #fff;
-    background-color: #686868;
-    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9);
-    cursor: pointer;
-    box-shadow: 25rem 25rem 10px rgba(0,0,0,.25);
-
 
 .container2 {
     display: flex;
@@ -146,7 +123,6 @@ button {
     display: flex;
     justify-content: center;
     width: 100%;
-
 }
 
 h2 {
@@ -193,7 +169,6 @@ h2 {
 }
 
 .container2 .select .icon .circle {
-
     position: absolute;
     z-index: 4;
     width: 28.8px;
@@ -215,68 +190,20 @@ h2 {
     color: #FFFFFF;
 
 }
-
 /********************CARTE RESTAURANTS**********************/
 /***********************************************************/
 
-.cards {
-
-    padding-top: 15px;
-    padding-left: 15px
-}
-
-.cards2 .cards .card_img{
-
-    width: 100%;
-    margin: 0px auto;
-    padding: 15px 0px;
+.restaurants {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
+    justify-content: center;
+    background-color: #F6F6F6;
 }
 
-.card_img {
-    flex-direction: column;
-    height: 50%;
-    width: 100%;
-    max-width: 800px;
-    position: relative;
-
-.new {
-
-    background-color: #99e2d0;
-    color: #1b6150;
-    padding: .5rem;
-    border-radius: .125rem;
-    position: absolute;
-    top: 1rem;
-    right: .75rem;
-
-}
-
-.card_info {
-    
-    padding: 1rem;
-    position: relative;
+.card1 {
     display: flex;
-    align-items: center;
-}
-
-.card_icon {
-
-    flex: 1;
-}
-
-.card_name {
-
-    margin: 0 0 .25rem;
-}
-
-.card_city {
-
-    margin: 0
+    flex-direction: column;
+   
 }
 
 /************************* FOOTER **************************/
@@ -311,6 +238,7 @@ footer .logo img {
     width: 100%;
     max-width: 800px;
 }
+
 .footer_card {
     flex-direction: column;
     line-height: 25px;
@@ -318,8 +246,6 @@ footer .logo img {
 }
 
 .footer_card i {
-
     font-size: 0.9rem;
     margin-right: 10px;
-
 }
