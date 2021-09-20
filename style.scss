@@ -1,0 +1,316 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 0;
+    text-decoration: none;
+    color: #000000;
+    background-color: #F6F6F6;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+main {
+    padding: 8px;
+    margin: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/************************* LOADER **************************/
+/***********************************************************/
+
+
+.container-header {
+    max-width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    margin: 1.5em 0;
+    width: 100%;
+    height: 60px;
+} 
+
+.logo {
+    height: 45px;
+    width: auto;
+}
+
+.localisation {
+    height: 50px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background-color: #EAEAEA;
+    margin-right: 10px;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #F6F6F6;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: center
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+}
+
+.btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 30px;
+    background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
+    cursor: pointer;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #FFFFFF;
+    width: auto;
+
+} 
+
+.title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 50px 0 30px 30px;
+    text-align: left;
+    color: #000000;
+}
+
+.title h2 {
+    margin: 40px 0 20px 0;
+}
+
+.container2 .container3 {
+    display: flex;
+    flex-direction: column;
+ } 
+
+.select {
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    width: 336px;
+    height: 74px;
+    border-radius: 20px;
+    background-color: #F6F6F6;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.select .icon {
+    left: -14px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    font-weight: 500;    
+}
+
+.container2 .select .icon .circle {
+    position: absolute;
+    z-index: 4;
+    width: 28.8px;
+    height: 28.8px;
+    border-radius: 50%;
+    background-color: #9356DC;
+}
+
+.container2 .select .icon .number {
+    font-size: 0.85rem;
+    font-weight: 400;
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28.8px;
+    height: 28.8px;
+    color: #FFFFFF;
+}
+
+/************************* RESTAURANTS *********************/
+/***********************************************************/
+
+.restaurants {
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: none;
+    justify-content: center;
+    background: #f6f6f6;
+
+}
+
+.restaurant_title {
+    background: #f6f6f6;
+    padding: 3.8rem 0 1.5rem 0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-family: "roboto",sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.card1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.card2 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.card3 {
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.card4 {
+    grid-column-start: 2;
+    grid-row-start: 5;
+}
+
+.restaurant_card {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 250px;
+    border-radius: 1.5rem;
+    box-shadow: 3px 8px 8px #dedada;
+    margin: 0 0 3rem 0;
+}
+
+.card_img {
+    border-radius: 1.5rem 1.5rem 0 0;
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.new {
+    border-radius: 3px;
+    background-color: #99e2d0;
+    color: #217460;
+    padding: 5px;
+    top: 12px;
+    right: 10px;
+}
+
+.card_info {
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 0 1.5rem 1.5rem;
+    padding-left: 1rem;
+    height: 75px;
+}
+
+.card1 .card2 .card3 .card4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.h3 {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "roboto",sans-serif;
+    padding: 1.3rem 0 .5rem 0;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+/************************* FOOTER **************************/
+/***********************************************************/ 
+
+footer {
+    font-size: 1rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 25px 35px 25px;
+    background-color: #353535;
+    color: white;
+}
+
+footer .logo {
+    padding-bottom: 10px;
+}
+
+.footer_card, .logo {
+    width: 100%;
+    max-width: 800px;
+}
+
+footer .logo img {
+    width: auto;
+    height: 20px;
+}
+
+.footer_card, .logo {
+    width: 100%;
+    max-width: 800px;
+}
+
+.footer_card {
+    flex-direction: column;
+    line-height: 25px;
+    display: flex;
+}
+
+.footer_card i {
+    font-size: 0.9rem;
+    margin-right: 10px;
+}
+/************************* PAGES MENU **********************/
+/***********************************************************/

@@ -1,9 +1,7 @@
-/******************* REGLES GLOBALES ***************/
-/***************************************************/
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  margin: auto;
+  margin: 0;
   text-decoration: none;
   color: #000000;
   background-color: #F6F6F6;
@@ -23,62 +21,17 @@ header {
 }
 
 main {
-  max-width: 800px;
-  margin: auto;
+  padding: 8px;
+  margin: 0;
 }
 
-/******************* LOADER ************************/
-/***************************************************/
-.loader {
-  border: 10px solid #9356DC;
-  border-top: 10px solid #FF79DA;
-  border-bottom: 10px solid #99E2D0;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  -webkit-animation-name: spin;
-          animation-name: spin;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  /******************* POSITION LOADER ****************/
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  /********************** ANIMATION *******************/
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-/*******************FIN  LOADER ********************/
-/***************************************************/
-
+/************************* LOADER **************************/
+/***********************************************************/
 .container-header {
   max-width: 800px;
   height: 100px;
@@ -88,9 +41,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-weight: 200;
+  margin: 1.5em 0;
   width: 100%;
   height: 60px;
 }
@@ -163,41 +115,10 @@ button {
   width: 220px;
   height: 50px;
   text-align: center;
-  color: #000000;
   color: #FFFFFF;
   border-radius: 30px;
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  -webkit-transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  transition: box-shadow 150ms linear, transform 150ms linear;
-  transition: box-shadow 150ms linear, transform 150ms linear, -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
-}
-
-.btn1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 220px;
-  height: 50px;
-  text-align: center;
-  color: #000000;
-  color: #FFFFFF;
-  border-radius: 30px;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 95%);
-  -webkit-transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  transition: -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  transition: box-shadow 150ms linear, transform 150ms linear;
-  transition: box-shadow 150ms linear, transform 150ms linear, -webkit-box-shadow 150ms linear, -webkit-transform 150ms linear;
-  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .container2 {
@@ -265,7 +186,7 @@ h2 {
   width: 336px;
   height: 74px;
   border-radius: 20px;
-  background: #F6F6F6;
+  background-color: #F6F6F6;
   -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
 }
@@ -316,12 +237,119 @@ h2 {
   color: #FFFFFF;
 }
 
-.container2 .select:nth-child(1) i {
-  font-size: 1.2rem;
+/************************* RESTAURANTS *********************/
+/***********************************************************/
+.restaurants {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 90% 1fr;
+      grid-template-columns: 1fr 90% 1fr;
+  -ms-grid-rows: none;
+      grid-template-rows: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #f6f6f6;
 }
 
-.container2 .select i {
-  padding: 0 18px 0 30px;
+.restaurant_title {
+  background: #f6f6f6;
+  padding: 3.8rem 0 1.5rem 0;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  font-family: "roboto",sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card1 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+}
+
+.card2 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+}
+
+.card3 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 4;
+      grid-row-start: 4;
+}
+
+.card4 {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+}
+
+.restaurant_card {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 250px;
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 3px 8px 8px #dedada;
+          box-shadow: 3px 8px 8px #dedada;
+  margin: 0 0 3rem 0;
+}
+
+.card_img {
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new {
+  border-radius: 3px;
+  background-color: #99e2d0;
+  color: #217460;
+  padding: 5px;
+  top: 12px;
+  right: 10px;
+}
+
+.card_info {
+  position: relative;
+  background-color: #fff;
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding-left: 1rem;
+  height: 75px;
+}
+
+.card1 .card2 .card3 .card4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.h3 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "roboto",sans-serif;
+  padding: 1.3rem 0 .5rem 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 /************************* FOOTER **************************/
@@ -336,12 +364,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
   padding: 25px 25px 35px 25px;
-  color: #FFFFFF;
   background-color: #353535;
+  color: white;
 }
 
 footer .logo {
@@ -379,8 +405,6 @@ footer .logo img {
   margin-right: 10px;
 }
 
-footer a:visited, footer a:link, footer a:active {
-  text-decoration: none;
-  color: #FFFFFF;
-}
+/************************* PAGES MENU **********************/
+/***********************************************************/
 /*# sourceMappingURL=style.css.map */
