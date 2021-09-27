@@ -25,6 +25,11 @@ a {
   text-decoration: none;
 }
 
+p:hover {
+  color: #9356DC;
+  text-decoration: none;
+}
+
 /*********************** ENTETE / CONCEPT ******************/
 /***********************************************************/
 .header_container {
@@ -146,6 +151,10 @@ h2 {
   height: 15px;
   color: #636363cc;
   margin-left: 20px;
+}
+
+p :hover {
+  color: #9356DC;
 }
 
 /************************* RESTAURANTS *********************/

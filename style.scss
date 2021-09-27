@@ -19,6 +19,11 @@ a {
     text-decoration: none;
 }
 
+p:hover {
+    color:#9356DC;
+    text-decoration: none;
+}
+
 /*********************** ENTETE / CONCEPT ******************/
 /***********************************************************/
 
@@ -57,7 +62,7 @@ h2 {
     margin: 0 20px;
 }
 
-.btn_xp {
+.btn_xp{
     position: relative;
     display: block;
     text-decoration: none;
@@ -72,8 +77,8 @@ h2 {
 
 .btn_xp2 {
     text-align: center;
-    padding-top: 15px;
-    color: white;  
+    padding-top: 15px; 
+    color:white;
 }
 
 .fct_container {
@@ -121,6 +126,10 @@ h2 {
     height: 15px;
     color: #636363cc;
     margin-left: 20px;
+}
+
+p :hover {
+   color: #9356DC;
 }
 /************************* RESTAURANTS *********************/
 /***********************************************************/
