@@ -33,7 +33,7 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     background-size: cover;
     position: absolute;
-    z-index: auto;
+    z-index: 1;
   }
   
   .loader {
@@ -45,8 +45,8 @@ body {
     height: 100px;
     -webkit-animation-name: spin;
             animation-name: spin;
-    -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    -webkit-animation-duration: 0.8s;
+            animation-duration: 0.8s;
     -webkit-animation-iteration-count: auto;
             animation-iteration-count: auto;
     -webkit-animation-timing-function: linear;
@@ -57,6 +57,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1;
   }
   
   @-webkit-keyframes spin {
@@ -483,3 +484,46 @@ body {
     width: 50px;
   }
   
+/********************ANIMATION MENU*****************************/
+/***************************************************************/
+  
+.fade-in-menu {
+    animation-name: fade-in-menu;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+    animation-delay: 0.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+    animation-play-state: running;
+	-webkit-animation: fade-in-menu 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-menu 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes fade-in-menu {
+    0% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-menu {
+    0% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /**************************************************************/
+  /**************************************************************/
