@@ -1,5 +1,5 @@
-/************************REGLES GLOBALES********************/
-/***********************************************************/
+/******************************REGLES GLOBALES********************/
+/*****************************************************************/
 body {
     font-family: "Roboto", sans-serif;
     margin: auto;
@@ -25,8 +25,8 @@ a {
     text-decoration: none;
   }
 
-  /*********************** LOADER ****************************/
-  /***********************************************************/
+  /*********************** LOADER ********************************/
+  /***************************************************************/
 
   .cont_loader {
     background-color: rgba(255, 255, 255, 0.9);
@@ -86,8 +86,8 @@ a {
     }
   }
   
-  /***********************************************************/
-  /***********************ANIM CONT_LOADER********************/
+  /***************************************************************/
+  /***********************ANIM CONT_LOADER************************/
 
   .pageloader_anim {
 	animation-name: text-blur-out;
@@ -124,8 +124,8 @@ a {
     }
   }
   
-  /*********************** ENTETE / CONCEPT ******************/
-  /***********************************************************/
+  /*********************** ENTETE / CONCEPT **********************/
+  /***************************************************************/
   .header_container {
     background: #ececec;
     padding-bottom: 25px;
@@ -262,8 +262,8 @@ a {
     margin-left: 20px;
   }
   
-  /************************* RESTAURANTS *********************/
-  /***********************************************************/
+  /************************* RESTAURANTS *************************/
+  /***************************************************************/
   .rest_background {
     background:#ececec;
   }
@@ -318,16 +318,9 @@ a {
     color: #278870;
     padding: 9px;
   }
-  
-  .icon_heart {
-    font-size: 1.5rem;
-    position:absolute;
-    right: 25px;
-    bottom: 25px;
-  }
 
-  /************************* FOOTER **************************/
-  /***********************************************************/
+  /************************* FOOTER ******************************/
+  /***************************************************************/
   footer {
     font-size: 1rem;
     font-weight: 300;
@@ -344,21 +337,6 @@ a {
     background-color: #353535;
   }
 
-  footer .logo {
-    padding-bottom: 10px;
-  }
-  
-  .footer_card, .logo {
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  footer .logo img {
-    width: 50%;
-    height: 20px;
-   
-  }
-   
   .footer_card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -375,8 +353,9 @@ a {
     margin-right: 10px;
   }
   
-  /************************* PAGES MENU **********************/
-  /***********************************************************/
+  .
+  /************************* PAGES MENU ***************************/
+  /****************************************************************/
   .back_icon {
     text-decoration: none;
     color: black;
@@ -389,7 +368,7 @@ a {
   
   .bloc_ban {
     overflow: hidden;
-    height: 350px;
+    height: 300px;
   }
   
   .img_ban {
@@ -399,14 +378,6 @@ a {
        object-fit: cover;
     -o-object-position: center bottom;
        object-position: center bottom;
-  }
-  
-  .icon_heart2 {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 25px;
-    top: 30px;
-    opacity: 1;
   }
   
   .menu_back {
@@ -419,9 +390,10 @@ a {
   
   .menu_title {
     font-family: "Shrikhand";
-    font-size: 1.75rem;
-    margin: 0;
+    font-size: 1.7rem;
     padding-top: 20px;
+    padding-left: 5px;
+    text-align: left;
   }
   
   .bloc_menu {
@@ -501,8 +473,8 @@ a {
     width: 50px;
   }
   
-/********************ANIMATION MENU*****************************/
-/***************************************************************/
+/********************ANIMATION MENU*******************************/
+/*****************************************************************/
   
 .fade-in-menu {
     animation-name: fade-in-menu;
@@ -542,6 +514,86 @@ a {
     }
   }
   
-  /**************************************************************/
+  /*********************** ANIM/COEUR MENU **********************/
   /**************************************************************/
 
+  .coeur {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    opacity: 1;
+  }
+  .coeur2 {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    top: 30px;
+    opacity: 0;
+  }
+
+  .coeur2:hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+
+   /******************* ANIM/COEUR PAGE ACC ********************/
+   /************************************************************/
+
+
+   .coeur0 {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    top: 190px;
+    opacity: 1;
+  }
+  .coeur1 {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    top: 190px;
+    opacity: 0;
+  }
+
+  .coeur1:hover {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    background: linear-gradient(#FF79DA, #9356DC);
+    background-color: rgba(0, 0, 0, 0);
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+    background-size: auto;
+    background-origin: padding-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+
+   /*************************************************************/
+   /*************************************************************/
