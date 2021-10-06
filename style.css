@@ -471,6 +471,44 @@ a {
     padding-left: 10px;
     width: 50px;
   }
+
+  .icon_check {
+    position: absolute;
+    background-color: #99E2D0;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform-origin: right 30%;
+    border-radius: 0px 20px 20px 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    transform: translateX(100px);
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition-duration: 0.5s;
+  }
+
+  .anim_check {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 1;
+  }
+
+.icon_check:hover {
+    transform: translateX(0px);
+    transition: 0.5s ease-in-out;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  }
   
 /********************ANIMATION MENU*******************************/
 /*****************************************************************/
