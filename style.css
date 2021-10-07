@@ -485,11 +485,6 @@ a {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 0px;
-    transform: translateX(100px);
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    transition-duration: 0.5s;
   }
 
   .anim_check {
@@ -501,13 +496,17 @@ a {
     opacity: 1;
   }
 
-.icon_check:hover {
-    transform: translateX(0px);
+.icon_check:hover{
+    transform: translateX(100px);
     transition: 0.5s ease-in-out;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition-duration: 0.5s;
   }
   
 /********************ANIMATION MENU*******************************/
@@ -573,20 +572,11 @@ a {
     opacity: 1;
     transition: 0.3s ease-in-out;
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     background: linear-gradient(#FF79DA, #9356DC);
-    background-color: rgba(0, 0, 0, 0);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
     background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
    }
@@ -614,20 +604,11 @@ a {
     opacity: 1;
     transition: 0.3s ease-in-out;
     transition-property: all;
-    transition-duration: 0.6s;
+    transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
     background: linear-gradient(#FF79DA, #9356DC);
-    background-color: rgba(0, 0, 0, 0);
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-repeat: repeat;
-    background-attachment: scroll;
     background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
-    background-size: auto;
-    background-origin: padding-box;
-    background-clip: border-box;
-    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
    }
