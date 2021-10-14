@@ -85,8 +85,6 @@ a {
     }
   }
   
-
-
   /***************************************************************/
   /***********************ANIM CONT_LOADER************************/
 
@@ -103,8 +101,8 @@ a {
 
  @-webkit-keyframes text-blur-out {
     0% {
-      -webkit-filter: blur(0.01);
-              filter: blur(0.01);
+      -webkit-filter: blur(0.01px);
+              filter: blur(0.01px);
               
     }
     100% {
@@ -409,7 +407,7 @@ a {
   
   .subline {
     background-color: #99E2D0;
-    margin: 3;
+    margin: 3px;
     height: 3px;
     width: 40px;
   }
@@ -478,9 +476,9 @@ a {
   
 .fade-in-menu {
     animation-name: fade-in-menu;
-    animation-duration: 0.6s;
+    animation-duration: 8s;
     animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-    animation-delay: 0.3s;
+    animation-delay: 4s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
@@ -503,7 +501,6 @@ a {
   }
   /*********************** ANIM/COEUR MENU **********************/
   /**************************************************************/
-
   .coeur {
     font-size: 1.5rem;
     position: absolute;
@@ -530,12 +527,35 @@ a {
     background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  
+    opacity: 1;
+   -webkit-transition: 0.3s ease-in-out;
+   -o-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+   -webkit-transition-property: all;
+   -o-transition-property: all;
+   transition-property: all;
+   -webkit-transition-duration: 0.5s;
+   -o-transition-duration: 0.5s;
+           transition-duration: 0.5s;
+   -webkit-transition-timing-function: ease-in-out;
+   -o-transition-timing-function: ease-in-out;
+           transition-timing-function: ease-in-out;
+   -webkit-transition-delay: 0s;
+   -o-transition-delay: 0s;
+           transition-delay: 0s;
+   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+   background: -o-linear-gradient(#FF79DA, #9356DC);
+   background: linear-gradient(#FF79DA, #9356DC);
+   background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 121, 218)), to(rgb(147, 86, 220)));
+   background-image: -o-linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+   background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+   -webkit-background-clip: text;
+           background-clip: text;
    }
 
    /******************* ANIM/COEUR PAGE ACC ********************/
    /************************************************************/
-
-
    .coeur0 {
     font-size: 1.5rem;
     position: absolute;
@@ -562,6 +582,31 @@ a {
     background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  
+    opacity: 1;
+   -webkit-transition: 0.3s ease-in-out;
+   -o-transition: 0.3s ease-in-out;
+   transition: 0.3s ease-in-out;
+   -webkit-transition-property: all;
+   -o-transition-property: all;
+   transition-property: all;
+   -webkit-transition-duration: 0.5s;
+   -o-transition-duration: 0.5s;
+           transition-duration: 0.5s;
+   -webkit-transition-timing-function: ease-in-out;
+   -o-transition-timing-function: ease-in-out;
+           transition-timing-function: ease-in-out;
+   -webkit-transition-delay: 0s;
+   -o-transition-delay: 0s;
+           transition-delay: 0s;
+   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+   background: -o-linear-gradient(#FF79DA, #9356DC);
+   background: linear-gradient(#FF79DA, #9356DC);
+   background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 121, 218)), to(rgb(147, 86, 220)));
+   background-image: -o-linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+   background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+   -webkit-background-clip: text;
+           background-clip: text;
    }
 
    /*************************************************************/
