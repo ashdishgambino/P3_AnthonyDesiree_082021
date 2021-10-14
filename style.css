@@ -473,9 +473,9 @@ a {
 /*****************************************************************/
 .fade-in-menu {
     animation-name: fade-in-menu;
-    animation-duration: 8s;
+    animation-duration: 5s;
     animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-    animation-delay: 4s;
+    animation-delay: 2s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: both;
@@ -485,12 +485,12 @@ a {
 
           -webkit-animation-name: fade-in-menu;
           animation-name: fade-in-menu;
-          -webkit-animation-duration: 8s;
-                  animation-duration: 8s;
+          -webkit-animation-duration: 5s;
+                  animation-duration: 5s;
           -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
                   animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-          -webkit-animation-delay: 4s;
-                  animation-delay: 4s;
+          -webkit-animation-delay: 2s;
+                  animation-delay: 2s;
           -webkit-animation-iteration-count: 1;
                   animation-iteration-count: 1;
           -webkit-animation-direction: normal;
