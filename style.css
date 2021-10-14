@@ -27,7 +27,6 @@ a {
 
   /*********************** LOADER ********************************/
   /***************************************************************/
-
   .cont_loader {
     background-color: rgba(255, 255, 255, 0.9);
     position:absolute;
@@ -87,7 +86,6 @@ a {
   
   /***************************************************************/
   /***********************ANIM CONT_LOADER************************/
-
   .pageloader_anim {
 	animation-name: text-blur-out;
     animation-duration: 1.2s;
@@ -122,7 +120,7 @@ a {
               filter: blur(12px) opacity(0%);
     }
   }
-  
+
   /*********************** ENTETE / CONCEPT **********************/
   /***************************************************************/
   .header_container {
@@ -473,7 +471,6 @@ a {
 
 /********************ANIMATION MENU*******************************/
 /*****************************************************************/
-  
 .fade-in-menu {
     animation-name: fade-in-menu;
     animation-duration: 8s;
@@ -485,6 +482,24 @@ a {
     animation-play-state: running;
 	-webkit-animation: fade-in-menu 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in-menu 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+          -webkit-animation-name: fade-in-menu;
+          animation-name: fade-in-menu;
+          -webkit-animation-duration: 8s;
+                  animation-duration: 8s;
+          -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+                  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+          -webkit-animation-delay: 4s;
+                  animation-delay: 4s;
+          -webkit-animation-iteration-count: 1;
+                  animation-iteration-count: 1;
+          -webkit-animation-direction: normal;
+                  animation-direction: normal;
+          -webkit-animation-fill-mode: both;
+                  animation-fill-mode: both;
+          -webkit-animation-play-state: running;
+                  animation-play-state: running;
+      
 }
 
  @-webkit-keyframes fade-in-menu {
