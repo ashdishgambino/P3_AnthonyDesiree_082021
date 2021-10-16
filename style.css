@@ -517,7 +517,7 @@ h4 {
   animation-name: fade-in-menu;
   animation-duration: 2s;
   animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-  animation-delay: 2.5s;
+  animation-delay: 2s;
   animation-iteration-count: 1;
   animation-direction: normal;
   animation-fill-mode: both;
@@ -531,8 +531,8 @@ h4 {
                 animation-duration: 2s;
         -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
                 animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-        -webkit-animation-delay: 2.5s;
-                animation-delay: 2.5s;
+        -webkit-animation-delay: 2s;
+                animation-delay: 2s;
         -webkit-animation-iteration-count: 1;
                 animation-iteration-count: 1;
         -webkit-animation-direction: normal;
@@ -556,6 +556,7 @@ h4 {
     opacity: 1;
   }
 }
+
   /*********************** ANIM/COEUR MENU **********************/
   /**************************************************************/
 .coeur {
@@ -744,7 +745,6 @@ footer {
   
   .card_menu {
       display: flex;
-      flex-direction: row
     }
 }
 header {
