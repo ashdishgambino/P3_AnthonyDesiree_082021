@@ -703,7 +703,7 @@ footer {
    /************************MEDIA QUERIES ***********************/
 
 
-   @media screen and (max-width: 375px) {
+   @media screen and (min-width: 375px) and (max-width: 800px) {
     .list_bloc {
         margin: 15px 0px 5px 15px;
         font-weight: bold;
@@ -723,7 +723,7 @@ footer {
       }  
 }
 
-@media screen and (min-width: 721px) and (max-width: 1280px) {
+@media screen and (min-width: 810px) and (max-width: 1080px) {
   .list_bloc {
       margin: 15px 0px 5px 15px;
       font-weight: bold;
