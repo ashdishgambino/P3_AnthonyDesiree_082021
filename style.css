@@ -28,8 +28,20 @@ a {
     left: 0px;
     right: 0px;
     bottom: 0px;
+    animation: Hide 3s ease 0s 1 normal forwards;
+    animation-delay: 400ms;
   }
+  @keyframes Hide {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   
+    100% {
+      opacity: 0;
+      transform: translateY(-550px);
+    }
+  }
 .loader {
     border: 10px solid #9356DC;
     border-top: 10px solid #FF79DA;
@@ -39,14 +51,14 @@ a {
     height: 100px;
     -webkit-animation-name: spin;
             animation-name: spin;
-    -webkit-animation-duration: 0.8s;
-            animation-duration: 0.8s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-iteration-count: 1;
             animation-iteration-count: 1;
     -webkit-animation-timing-function: linear;
             animation-timing-function: linear;
     margin: auto;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -62,7 +74,7 @@ a {
     100% {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg); 
-              z-index: -10;     
+              visibility: hidden;     
     }
   }
   
@@ -74,24 +86,11 @@ a {
     100% {
       -webkit-transform: rotate(360deg);
               transform: rotate(360deg);
-              z-index: -10;
+             visibility: hidden;
               
     }
   }
   
-  /***************************************************************/
-  /***********************ANIM CONT_LOADER************************/
-.pageloader_anim {
-	animation-name: text-blur-out;
-    animation-duration: 1.2s;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
-    animation-play-state: running;
- }
-
   /*********************** ENTETE / CONCEPT **********************/
   /***************************************************************/
 .header_container {
