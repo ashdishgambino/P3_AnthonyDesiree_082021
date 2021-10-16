@@ -160,7 +160,7 @@ h2 {
     cursor: pointer;
     transition-duration:25s;
     background-color: #fff;
-    box-shadow: 10px 15px 5px px rgba(13, 12, 12, 0.75);
+    box-shadow: 10px 15px 5px 4px rgba(13, 12, 12, 0.75);
     -moz-box-shadow: 9px 10px 10px 4px rgba(13, 12, 12, 0.75);
     -webkit-box-shadow: 9px 10px 10px 4px rgba(13, 12, 12, 0.75);
   }
@@ -408,20 +408,7 @@ h4 {
     width: 50px;
   }
 
-.bloc_check {
-  position: absolute;
-  background-color: #99E2D0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 65px;
-  transform-origin: right 50%;
-  border-radius: 0px 0px 0px 0px;
-  transform: translateX(65px);
-  overflow: hidden;
-  transition-duration: 0.5s;
-  }
- 
+
 /********************ANIMATION MENU*******************************/
 /*****************************************************************/
 .fade-in-menu {
@@ -716,7 +703,7 @@ footer {
    /************************MEDIA QUERIES ***********************/
 
 
-   @media screen and (max-width: 400px) {
+   @media screen and (max-width: 375px) {
     .list_bloc {
         margin: 15px 0px 5px 15px;
         font-weight: bold;
