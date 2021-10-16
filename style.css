@@ -161,7 +161,7 @@ h2 {
     cursor: pointer;
     transition-duration:25s;
     background-color: #fff;
-    box-shadow: 9px 10px 10px 4px rgba(13, 12, 12, 0.75);
+    box-shadow: 10px 15px 5px px rgba(13, 12, 12, 0.75);
     -moz-box-shadow: 9px 10px 10px 4px rgba(13, 12, 12, 0.75);
     -webkit-box-shadow: 9px 10px 10px 4px rgba(13, 12, 12, 0.75);
   }
@@ -194,6 +194,9 @@ h2 {
             box-shadow: 2px 2px 7px #d3d3d3;
   }
   
+  .fct_card:hover {
+    background: #c59df7;
+  }
 .icon {
     position: relative;
     margin-left: -10px;
@@ -282,40 +285,6 @@ h4 {
     padding: 9px;
   }
 
-  /************************* FOOTER ******************************/
-  /***************************************************************/
-footer {
-    font-size: 1rem;
-    font-weight: 300;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: left;
-    padding: 25px 25px 35px 25px;
-    color: #FFFFFF;
-    background-color: #353535;
-  }
-
-.footer_card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    line-height: 25px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  
-.footer_card i {
-    font-size: 0.9rem;
-    margin-right: 10px;
-  }
-  
   /************************* PAGES MENU ***************************/
   /****************************************************************/
 .back_icon {
@@ -369,7 +338,7 @@ footer {
     margin-top: 20px;
     margin-right: 0px;
     margin-bottom: 8px;
-    margin-left: 0px;
+    margin-left: 20px;
     text-align: left;
   }
   
@@ -382,6 +351,7 @@ footer {
     margin-left: 20px;
     height: 3px;
     width: 40px;
+    justify-self: left;
   }
   
   /************************* CARTES MENU **************************/
@@ -409,14 +379,20 @@ footer {
   }
 
 .bloc_acc_price {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     overflow: hidden;
     width: 100%;
     transform-origin: left 50%;
     transition-duration: 0.5s;
+
   }
 
+.bloc_acc_price:hover {
+  width: calc(100% - 65px);
+  transition: width 0.5s ease-in-out;
+  
+}
 .element_acc {
     margin: 0px 0px 0px 15px;
     font-weight: normal;
@@ -434,29 +410,19 @@ footer {
   }
 
 .bloc_check {
-    position: absolute;
-    background-color: #99E2D0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 65px;
-    transform-origin: right 50%;
-    border-radius: 0px 20px 20px 0px;
-    transform: translateX(65px);
-    overflow: hidden;
-    transition-duration: 0.5s;
+  position: absolute;
+  background-color: #99E2D0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 65px;
+  transform-origin: right 50%;
+  border-radius: 0px 0px 0px 0px;
+  transform: translateX(65px);
+  overflow: hidden;
+  transition-duration: 0.5s;
   }
  
-.icon_check {
-    position: absolute;
-    left: 20px;
-    top: 25px;
-    font-size: 1.5rem;
-    color: white;
-    opacity: 1;
-     }
-
-
 /********************ANIMATION MENU*******************************/
 /*****************************************************************/
 .fade-in-menu {
@@ -490,7 +456,7 @@ footer {
       
 }
 
- @-webkit-keyframes fade-in-menu {
+@-webkit-keyframes fade-in-menu {
     0% {
       -webkit-transform: translateY(50px);
               transform: translateY(50px);
@@ -501,7 +467,7 @@ footer {
               transform: translateY(0);
       opacity: 1;
     }
-  }
+}
   /*********************** ANIM/COEUR MENU **********************/
   /**************************************************************/
 .coeur {
@@ -612,6 +578,50 @@ footer {
    -webkit-background-clip: text;
            background-clip: text;
    }
+
+
+/************************* FOOTER ******************************/
+/***************************************************************/
+footer {
+  font-size: 1rem;
+  font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding: 25px 25px 35px 25px;
+  color: #FFFFFF;
+  background-color: #353535;
+}
+
+.logo_footer {
+
+  filter: invert(100%);
+  width: 2px;
+  height: 2px;
+  padding: 2rem 0 2rem 0;
+  
+}
+}
+.footer_card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer_card i {
+  font-size: 0.9rem;
+  margin-right: 10px;
+}
 
    /*************************************************************/
    /************************MEDIA QUERIES ***********************/
