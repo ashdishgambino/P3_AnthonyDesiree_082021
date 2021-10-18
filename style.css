@@ -8,7 +8,7 @@ body {
   
 header {
     background-color: white;
-    height: 60px;
+    height: 70px;
     display: flex;
      justify-content: center;
   }
@@ -388,7 +388,7 @@ h4 {
   }
 
 .bloc_acc_price:hover {
-  width: calc(100% - 65px);
+  
   transition: width 0.5s ease-in-out;
   
 }
@@ -703,7 +703,7 @@ footer {
    /************************MEDIA QUERIES ***********************/
 
 
-   @media screen and (min-width: 375px) and (max-width: 800px) {
+   @media screen and (min-width: 50px) and (max-width: 800px) {
     .list_bloc {
         margin: 15px 0px 5px 15px;
         font-weight: bold;
