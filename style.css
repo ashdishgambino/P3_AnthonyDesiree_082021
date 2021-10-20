@@ -75,7 +75,7 @@ body {
   background : #ececec;
   }
   .logo_header {
-  width : 100px;
+  width : 200px;
   
   }
   .localisation {
@@ -139,9 +139,25 @@ body {
   .fct_container {
   display : flex;
   padding-bottom : 50px;
-  flex-direction : column;
-  justify-content : center;
+  justify-content :space-between;
   }
+
+
+.fct_container {
+      
+      }
+      div.fct_card:nth-child(1) {
+        width: 295px;
+      }
+ 
+      div.fct_card:nth-child(2) {
+        width: 295px;
+      }
+
+      div.fct_card:nth-child(3) {
+        width: 295px;
+}
+      
   .fct_card {
   text-decoration : none;
   display : flex;
@@ -496,18 +512,18 @@ body {
 /**********************************************************************************************/
 /**********************************************************************************************/
  .coeur {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 25px;
-    top: 30px;
-    opacity: 1;
+        font-size: 1.4rem;
+        position: absolute;
+        right: 15px;
+        top: 200px;
+        opacity: 1;
   }
  .coeur2 {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 25px;
-    top: 30px;
-    opacity: 0;
+        font-size: 1.4rem;
+        position: absolute;
+        right: 15px;
+        top: 200px;
+        opacity: 0;
   }
 
  .coeur2:hover {
