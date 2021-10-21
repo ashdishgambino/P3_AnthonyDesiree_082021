@@ -657,102 +657,60 @@ body {
 
 /**********************************************************************************************/
 /**********************************************************************************************/
+/********************** MOBILE/TABLETTE*************************/
 
-/********************** MOBILE/page Accueil *************************/
-
-@media screen and (min-width: 50px) and (max-width: 800px) {
+     @media screen and (min-width: 290px)and (max-width:599px){
         .fct_container {
                 display : flex;
-                padding-bottom : 50px;
-                justify-content :space-between;
                 flex-direction: column;
-                }  
-        
-        
-         .fct_card {
-                text-decoration : none;
-                display : flex;
-                background : #ececec;
-                border-radius : 60px;
-                align-items : center;
-                margin : 10px 20px 10px 25px;
-                box-shadow : 2px 2px 7px #d3d3d3;
                 }
-        
-        .bloc_title {
-                font-weight: bold;
-                font-size: 1.5rem;
-                padding: 10px 0 10px 25px;
-                margin: 0;
+        .fct_container {
                 }
-        }
-        .bloc_restaurant {
-               display: flex;
-               flex-direction: column;
-               justify-content:center
-               }
-        
-        .card_menu {
-                display : flex;
-                flex-direction : column;
-                justify-content: center;
+        div.fct_card:nth-child(1) {
+                  width: auto;
                 }
-         div.fct_card:nth-child(1) {
-         width: 330px;
-         }
         div.fct_card:nth-child(2) {
-         width: 330px;
-         }
-         div.fct_card:nth-child(3) {
-         width: 330px;
-         }
-         .card {
-        position: relative;
-        background: white;
-        height: 270px;
-        border-radius: 10px;
-        margin: 20px;
-        box-shadow: 2px 2px 7px #d3d3d3;
-        display: flex;
-        flex-direction: column;
-              }
- }
-
-/********************** TABLETTES *********************/
-
-@media screen and (min-width: 801px) and (max-width: 1080px) {
-        .fct_container {
-                display : flex;
-                padding-bottom : 50px;
-                justify-content :space-between;
-                flex-direction: column;
-                }  
-        
-        
-         .fct_card {
-                text-decoration : none;
-                display : flex;
-                background : #ececec;
-                border-radius : 60px;
-                align-items : center;
-                margin : 10px 20px 10px 25px;
-                box-shadow : 2px 2px 7px #d3d3d3;
+                  width: auto;
                 }
-        
-        
-        .bloc_restaurant {
-               display: flex;
-               flex-direction: column;
-               justify-content: space-between;
+        div.fct_card:nth-child(3) {
+                  width: auto;
           }
-        
-          .card_menu {
-                display : flex;
-                flex-direction : column;
+        .bloc_restaurant {
+                display: flex;
+                flex-direction: column;
                 }
-        }
-}
+        article.card:nth-child(2) {
+                 width: auto;
+                      }
+        article.card:nth-child(3) {
+                width: auto;
+                      }
+        article.card:nth-child(4) {
+                width: auto;
+                      }
+article.card:nth-child(1) {
+                width: auto;
+      }
 
-@media screen and (min-width: 1081px) and (max-width: 1600px) {
-    
-}
+     @media screen and (min-width: 600px) and (max-width: 1280px) {
+        .fct_container {
+                padding-bottom: 50px;
+                justify-content: space-between;
+                }
+
+        .fct_container {
+                }
+        div.fct_card:nth-child(1) {
+                  width: auto;
+                }
+        div.fct_card:nth-child(2) {
+                  width: auto;
+                }
+        div.fct_card:nth-child(3) {
+                  width: auto;
+                }
+
+ }
+                
+
+     
