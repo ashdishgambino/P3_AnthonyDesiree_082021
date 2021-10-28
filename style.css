@@ -24,16 +24,16 @@ body {
   left : 0;
   right : 0;
   bottom : 0;
-  animation : Hide 3s 0s ease 1 normal forwards;
-  animation-delay : 400ms;
+  animation : Hide 1s 0s ease 1 normal forwards;
+  animation-delay : 300ms;
   }
   @keyframes Hide {
   0% {
   opacity : 1;
   transform : translateY(0);
   }
-  98% {
-  opacity : 0.3;
+  90% {
+  opacity : 0.1;
   transform : translateY(0);
   }
   100% {
@@ -49,7 +49,7 @@ body {
   width : 100px;
   height : 100px;
   animation-name : spin;
-  animation-duration : 2s;
+  animation-duration : 1s;
   animation-iteration-count : 1;
   animation-timing-function : linear;
   margin : auto;
@@ -108,11 +108,7 @@ body {
   .fct_title {
   padding-left : 40px;
   }
-  .bckground_concept {
-  background : #ececec;
-  padding-bottom : 2px;
-  padding-top : 20px;
-  }
+
   .btn_xp {
   position : relative;
   display : block;
@@ -132,14 +128,14 @@ body {
   .btn_xp:hover {
   background-image : linear-gradient(0deg, rgb(147, 86, 220, 0.9), rgb(255, 121, 218, 0.9));
   cursor : pointer;
-  transition-duration : 25s;
+  transition-duration: 350ms;
   background-color : #fff;
-  box-shadow : 10px 15px 5px 4px rgb(13, 12, 12, 0.75);
+  box-shadow : 4px 9px 11px 1px rgb(13, 12, 12, 0.75);
   }
   .fct_container {
   display : flex;
   padding-bottom : 50px;
-  justify-content :space-between;
+  justify-content :center;
   }
 
 
@@ -147,15 +143,15 @@ body {
       
       }
       div.fct_card:nth-child(1) {
-        width: 295px;
+        width: 340px;
       }
  
       div.fct_card:nth-child(2) {
-        width: 295px;
+        width: 340px;
       }
 
       div.fct_card:nth-child(3) {
-        width: 295px;
+        width: 340px;
 }
       
   .fct_card {
@@ -203,6 +199,12 @@ body {
   color : #8f33ff;
   margin-left : 20px;
   }
+
+  .acc_background {
+        background : #ececec;
+        padding-bottom: 50px;
+        padding-top: 40px;
+        }
 /************************************************************************************************/
 /************************************************************************************************/
 
@@ -231,16 +233,16 @@ body {
   }
 
   article.card:nth-child(2) {
-        width: 250px;
+        width: 310px;
       }
   article.card:nth-child(3) {
-        width: 250px;
+        width: 310px;
       }
   article.card:nth-child(4) {
-        width: 250px;
+        width: 310px;
       }
   article.card:nth-child(1) {
-        width: 250px;
+        width: 310px;
       }
   .card_bloc {
   overflow : hidden;
@@ -738,7 +740,7 @@ body {
       }
         .card_menu {
                 display : flex;
-                flex-direction : row;
+                flex-direction: column;
                 }
     
  }
