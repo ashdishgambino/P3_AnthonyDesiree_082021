@@ -125,7 +125,7 @@ body {
   padding-top : 15px;
   color : white;
   }
-  .btn_xp:hover {
+  .btn_xp:hover , .btn_xp:active {
   background-image : linear-gradient(0deg, rgb(147, 86, 220, 0.9), rgb(255, 121, 218, 0.9));
   cursor : pointer;
   transition-duration: 350ms;
@@ -163,7 +163,7 @@ body {
   margin : 10px 20px 10px 25px;
   box-shadow : 2px 2px 7px #d3d3d3;
   }
-  .fct_card:hover {
+  .fct_card:hover .fct_card:active {
   background : #c59df7;
   }
   .icon {
@@ -304,7 +304,6 @@ body {
   object-fit : cover;
   object-position : center bottom;
   }
-
 
   /************************************************************************************************/
   /************************************************************************************************/
@@ -589,7 +588,7 @@ body {
     opacity: 0;
   }
 
- .coeur1:hover {
+ .coeur1:hover{
     opacity: 1;
     transition: 0.5s ease-in-out;
     transition-property: all;
@@ -703,8 +702,50 @@ body {
                 display: flex;
                 flex-direction: column;
      }
-        
- }
+         .fct_card:active {
+        background : #c59df7;
+        }   
+
+        .coeur1:active{
+                opacity: 1;
+                transition: 0.5s ease-in-out;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                background: linear-gradient(#FF79DA, #9356DC);
+                background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+       }
+        .coeur2:active {
+                opacity: 1;
+                transition: 0.3s ease-in-out;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+                background: linear-gradient(#FF79DA, #9356DC);
+                background-image: linear-gradient(rgb(255, 121, 218), rgb(147, 86, 220));
+                background-clip: text;
+              -webkit-text-fill-color: transparent;
+
+       }
+       .list_menu:active .bloc_acc_price {
+        width : calc(100% - 75px);
+        transition : 0.5s ease-in-out;
+        }
+        .list_menu:active .bloc_check {
+        transform : translateX(0);
+        transition : 0.5s ease-in-out;
+        visibility : visible;
+        }
+        .list_menu:active .bloc_check .anim_check {
+        color : white;
+        transform : rotate(360deg);
+        transition : 0.7s ease-in-out;
+        visibility : visible;
+        }
 
      @media screen and (min-width: 600px) and (max-width: 1280px) {
         .fct_container {
@@ -742,8 +783,6 @@ body {
                 display : flex;
                 flex-direction: column;
                 }
-    
+        
  }
                 
-
-     
