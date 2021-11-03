@@ -411,7 +411,7 @@ body {
   }
   .list_menu:hover .bloc_acc_price {
   width : calc(100% - 75px);
-  transition : width 0.5s ease-in-out;
+  transition : 0.5s ease-in-out;
   }
   .list_menu:hover .bloc_check {
   transform : translateX(0);
@@ -591,7 +591,7 @@ body {
 
  .coeur1:hover {
     opacity: 1;
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease-in-out;
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease-in-out;
@@ -703,7 +703,7 @@ body {
                 display: flex;
                 flex-direction: column;
      }
-
+        
  }
 
      @media screen and (min-width: 600px) and (max-width: 1280px) {
