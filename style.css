@@ -736,40 +736,6 @@ body {
               transform : rotate(360deg);
               transition : 0.7s ease-in-out;
               visibility : visible;
-              }
+ }
+ }
       
-           @media screen and (min-width: 600px) and (max-width: 1280px) {
-              .fct_container {
-                      display : flex;
-                      flex-direction: column;
-                      }
-         
-              div.fct_card:nth-child(1) {
-                        width: auto;
-                      }
-              div.fct_card:nth-child(2) {
-                        width: auto;
-                      }
-              div.fct_card:nth-child(3) {
-                        width: auto;
-                }
-              .bloc_restaurant {
-                      display: flex;
-                      flex-direction: column;
-                      }
-              article.card:nth-child(2) {
-                       width: auto;
-                            }
-              article.card:nth-child(3) {
-                      width: auto;
-                            }
-              article.card:nth-child(4) {
-                      width: auto;
-                            }
-              article.card:nth-child(1) {
-                      width: auto;
-            }
-              .card_menu {
-                      display : flex;
-                      flex-direction: column;
-       }
